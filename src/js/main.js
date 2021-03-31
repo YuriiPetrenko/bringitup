@@ -10,7 +10,13 @@ window.addEventListener('DOMContentLoaded',()=>{
         container: '.page'
     });
     slider.render()
-    
+
+    const modulePageSlider = new MainSlider({
+        btns: '.next',
+        container: '.moduleapp'
+    });
+    modulePageSlider.render()
+
     const player = new VideoPlayer('.showup .play', '.overlay');
     player.init()
     
