@@ -2,6 +2,7 @@ import MainSlider from './modules/slider/slider-main'
 import MiniSlider from './modules/slider/slider-mini'
 import VideoPlayer from './modules/video'
 import Difference from './modules/difference'
+import Form from './modules/form'
 
 window.addEventListener('DOMContentLoaded',()=>{
     const slider = new MainSlider({
@@ -41,6 +42,6 @@ window.addEventListener('DOMContentLoaded',()=>{
     feedSlider.init()
 
     new Difference('.officerold', '.officernew', '.officer__card-item').init();
-
+    new Form('.form').init();
 })
 
